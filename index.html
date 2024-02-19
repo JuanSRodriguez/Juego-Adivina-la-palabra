@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Adivina la palabra</title>
 </head>
 <body>
-    
+
+    <div>
+        <p>
+            Instruciones:
+            ❗Tienes tres intentos para adivinar la palabra oculta. Se trata de que adivines UNO de los dos nombres, de la mujer mas hermosa del planeta. Intenta 
+        </p>
+    </div>
+
+    <div id="intentos-restantes">Intentos restantes: 3</div>
+    <div id="pista1" class="pista"></div>
+    <div id="pista2" class="pista"></div>
+
+    <div id="formulario">
+        <label for="suposicionUsuario">Ingresa tu suposición de la palabra:</label>
+        <input type="text" id="suposicionUsuario">
+        <button onclick="jugarAdivinaLaPalabra()">Enviar</button>
+
+        <div id="alerta-overlay">
+            <div id="alerta-box">
+                <p id="alerta-mensaje"></p>
+                <button onclick="cerrarAlerta()">Aceptar</button>
+            </div>
+        </div>
+
+        <button id="reiniciar-btn" onclick="reiniciarJuego()">Reiniciar Juego</button>
+
+
+
+    <script src="main.js"></script>
 </body>
 </html>

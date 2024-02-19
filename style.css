@@ -1,4 +1,5 @@
 body {
+    background: rgb(197, 235, 235);
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 50px;
@@ -65,10 +66,10 @@ button:hover {
 }
 
 #reiniciar-btn {
-    background-color: #f44336;
+    background-color: #367718;
     color: white;
 }
 
 #reiniciar-btn:hover {
-    background-color: #d32f2f;
+    background-color: #1ce64e;
 }
